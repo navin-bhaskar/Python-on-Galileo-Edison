@@ -10,7 +10,7 @@ https://navinbhaskar.wordpress.com/2015/03/20/python-on-intel-galileoedison-part
 
 #File structure
 Each folder here is a part of a tutorial I've been blogging for some time. Inside each folder, you'll find one or more
-Python files along with a "README.md" that contains a short explanation about the script. It also includes link to 
-relevent blog post which contains further explnation and is actually a tutorial for using that particular peripheral in
-most cases
+Python files which contain the demo code. The comment section includes link to the relevent blog post which contains
+further explnation and is actually a tutorial for using that particular peripheral.
+
 
