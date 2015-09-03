@@ -1,5 +1,25 @@
 #!/usr/bin/python
 
+"""
+This script demonstrates the usage of mraa library for configuring and
+using a pin for adc operation
+
+setup:
+The LED is connected port D5 and a "Rotary angle sensor" to port A0
+
+Demo:
+start the application in the command line by using following command:
+python adc.py
+Rotate the rotary angle switch to control the intensity with which the 
+LED glows
+
+You can exit this demo by hitting ctrl+c
+
+Link for this tutorial:
+https://navinbhaskar.wordpress.com/2015/04/08/python-on-intel-galileoedison-part-4-adc/
+
+"""
+
 import mraa
 import time
 
