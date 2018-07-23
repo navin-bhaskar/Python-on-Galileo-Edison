@@ -10,7 +10,7 @@ def OnDisconnecthandler(client, userdata, rc):
     print("Disconnection returned " + str(rc))
 
 def on_message(client, userdata, message):
-    info = "[" + message.topic + "] [" + str(message.payload) + "]"
+    info = "t: [" + message.topic + "] m: [" + str(message.payload) + "]"
     print("Message received! " + info)
 
 def OnPublishHandler(client, userdata, mid):
