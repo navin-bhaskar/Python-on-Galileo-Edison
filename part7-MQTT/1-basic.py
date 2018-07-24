@@ -20,7 +20,7 @@ def OnSubscribeHandler(client, userdata, mid, granted_qos):
     print("Successfully subscribed! QoS: " + str(granted_qos[0]))
 
 if __name__ == '__main__':
-    client = paho.Client(protocol=paho.MQTTv31)
+    client = paho.Client(client_id="65a4sd65as4dasd6", protocol=paho.MQTTv31)
 
     client.on_connect = OnConnectHandler
     client.on_disconnect = OnDisconnecthandler
