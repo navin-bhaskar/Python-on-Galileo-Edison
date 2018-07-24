@@ -10,7 +10,7 @@ def OnDisconnecthandler(client, userdata, rc):
     print("Disconnection returned " + str(rc))
 
 def on_message(client, userdata, message):
-    info = "[" + message.topic + "] [" + str(message.payload) + "]"
+    info = "t: [" + message.topic + "] m: [" + str(message.payload) + "]"
     print("Message received! " + info)
 
 def OnPublishHandler(client, userdata, mid):
@@ -20,7 +20,7 @@ def OnSubscribeHandler(client, userdata, mid, granted_qos):
     print("Successfully subscribed! QoS: " + str(granted_qos[0]))
 
 if __name__ == '__main__':
-    client = paho.Client(protocol=paho.MQTTv31)
+    client = paho.Client(client_id="65a4sd65as4dasd6", protocol=paho.MQTTv31)
 
     client.on_connect = OnConnectHandler
     client.on_disconnect = OnDisconnecthandler
